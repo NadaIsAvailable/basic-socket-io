@@ -2,8 +2,21 @@
 <html lang="en">
 <head>
   <title>Socket Chat!</title>
+  <script src="/socket.io/socket.io.js" defer></script>
+  <script src="/assets/client.js" defer></script>
 </head>
 <body>
+  <form id="editForm">
+    <input type="text" id="editBox">
 
+    <select name="channel" id="channelSelect">
+      <option value="general">General</option>
+      <option value="memes">Memes</option>
+    </select>
+    
+    <input type="submit">
+  </form>
+  
+  <div id="messages"></div>
 </body>
 </html>
